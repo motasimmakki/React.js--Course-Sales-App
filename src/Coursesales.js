@@ -27,7 +27,7 @@ export default class Coursesales extends Component {
         <h2> You can Buy Courses :</h2><br />
         <div id="courses">
           {courses}
-          <p><b>Total : </b>{this.state.total}</p>
+          <p><strong>Total :</strong> <b>{this.state.total}</b></p>
         </div>
       </div>
     );
@@ -54,7 +54,7 @@ class Course extends Component {
   render(){
     return(
       <div>
-        <p onClick={this.clicker}>{this.props.name} = <b>{this.props.price}</b></p>
+        <p className={this.state.active ? 'active': ''} onClick={this.clicker}>{this.props.name} <b>{this.props.price}</b></p>
       </div>
     );
   }
