@@ -2,6 +2,7 @@ import React,{ Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Coursesales from './Coursesales'
+import Footer from './Footer';
 
 class App extends Component {
   render(){
@@ -21,9 +22,12 @@ class App extends Component {
             | Course Sales App |
           </p>
         </header>
-
-        <Coursesales items={courses}/>
-
+        <div id="body">
+          <Coursesales items={courses}/>
+        </div>
+        <div id="footer">
+          <Footer />
+        </div>
       </div>
     );
   }
