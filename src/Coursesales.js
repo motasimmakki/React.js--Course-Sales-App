@@ -1,6 +1,5 @@
 import React,{ Component } from 'react';
 import Course from './Course';
-import Footer from './Footer';
 
 export default class Coursesales extends Component {
 
@@ -33,8 +32,6 @@ export default class Coursesales extends Component {
         </div>
 
         <Course />
-
-        <Footer />
       </div>
     );
   }
